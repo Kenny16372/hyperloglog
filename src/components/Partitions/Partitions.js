@@ -4,13 +4,13 @@ function Partitions(props) {
     return (
         <div className="partitions"
         >
-            {props.partitions?.filter(p => !!p).map((partition, idx) => {
+            {props.partitions?.map((partition, idx) => {
                 return (
                 <div
                     key={idx}
                     className="partition"
-                    title={Math.pow(2, partition.maxLeadingZeros)}
-                    style={{height: partition.maxLeadingZeros + 'em'}}
+                    title={Math.pow(2, partition)}
+                    style={{height: partition + 'em'}}
                 >
                 </div>
                 );
