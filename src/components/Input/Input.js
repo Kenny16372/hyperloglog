@@ -3,6 +3,7 @@ import useLinkContent from "../../hooks/LinkContent";
 import InputMethodSelection from "../InputMethodSelection/InputMethodSelection";
 import LinkInput from "../LinkInput/LinkInput";
 import TextInput from "../TextInput/TextInput";
+import "./Input.css";
 
 function Input(props) {
     let [text, setText] = useState("");
@@ -44,7 +45,7 @@ function Input(props) {
                 <InputMethodSelection
                     onChange={setSelected}
                 />
-                <button>Update</button>
+                <button className="updateHll">Update</button>
             </form>
         </div>
     )
